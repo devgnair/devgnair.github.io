@@ -17,8 +17,16 @@
 	--header-profile-text-bold-color-hover: #ddda15;
 	--text-color-faded: #575757;
 	--about-text-color: #161616;
+	--img-modal-text-color: #ebebeb;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+div, img {
+    -webkit-tap-highlight-color: transparent; 
+}
 
 body {
 	background-color: var(--background-color-main);
@@ -324,4 +332,79 @@ footer {
 	align-items: center;
 	justify-content: center;
 	font-size: 0.8rem;
+}
+
+ /* The Modal (background) */
+.img-modal {
+	display: none;
+	position: fixed;
+	z-index: 101;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	/* overflow: auto; */
+	background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal Content/Box */
+.img-modal-content {
+	background-color: transparent;
+	margin: 10vh auto;
+	padding: 20px;
+	width: 90vw;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-modal-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-modal-img-content {
+	height: 80vh;
+	width: auto;
+}
+
+@media (orientation: portrait) {
+	.img-modal-content {
+		margin: auto auto;
+	}
+	.img-modal-img-content {
+		height: auto;
+		width: 90vw;
+	}	
+}
+
+.img-modal-text {
+	display: float;
+	text-align: center;
+	justify-content: center;
+	margin-top: 12px;
+	color: var(--img-modal-text-color);
+	font-size: 0.8rem;
+}
+
+.scroller {
+	display: none;
+	position: fixed;
+	left: auto;
+	top: auto;
+	bottom: 30px;
+	right: 30px;
+	z-index: 99;
+	font-size: 28px;
+	text-decoration: none;
+	color: var(--header-profile-text-color);
+	background-color: #fafafa;
+	border-radius: 18px;
+	padding: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
