@@ -2,8 +2,8 @@
 
 
 :root {
-	--dp-img: url("./assets/dev4.png");
-	--header-img: url("./assets/18.png");
+	--dp-img: url("./assets/site_things/dp.jpg");
+	--header-img: url("./assets/site_things/header_image.jpg");
 	--background-color-main: white;
 	--header-img-height: 60vh;
 	--header-img-width: var(--header-img-height);
@@ -306,8 +306,9 @@ section .semi-title {
 	}
 
 	.body-nav {
-		margin-top: 40px;
-		margin-bottom: 2px;
+		font-size: 0.8rem;
+		margin-top: 30px;
+		margin-bottom: 12px;
 	}
 
 	.body-nav .item {
